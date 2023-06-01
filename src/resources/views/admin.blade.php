@@ -9,7 +9,7 @@
         <div class="confirm__heading">
             <h2>お問い合わせ内容確認</h2>
         </div>
-        <?php print_r($contact['name']); ?>
+        {{-- <?php print_r($contact['name']); ?>
         <form class="form" action="/contacts" method="post">
             @csrf
             <div class="confirm-table">
@@ -43,10 +43,6 @@
             <div class="form__button">
                 <button class="form__button-submit" type="submit">送信</button>
             </div>
-            <div class="form__button">
-                <button class="form__button-submit" name='back' value="back" type="submit">修正する</button>
-            </div>
-
         </form>
     </div>
-@endsection
+@endsection --}}
