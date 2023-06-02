@@ -24,8 +24,17 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255']
+            'fullname' => ['required', 'string', 'max:255'],
+            'gender' => ['required'],
+            'email' => ['string', 'email', 'max:255'],
+            'postcode' => ['required', 'max:8'],
+            'address' => ['required', 'max:255'],
+            'opinion' => ['required']
         ];
+    }
+
+    public function prepareForValidation()
+    {
+        $this->merge(['english' => mb_convert_kana($this->english, 'as')]);
     }
 }
