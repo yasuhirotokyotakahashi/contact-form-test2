@@ -1,5 +1,6 @@
 .header {
     background: #000;
+
 }
 
 .header__inner {
@@ -13,12 +14,14 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+
 }
 
 .contact-form__content {
     margin: 0 auto;
     padding: 30px 15px;
     max-width: 1230px;
+
 }
 
 .contact-form__heading {
@@ -42,8 +45,8 @@
     margin-left: 5px;
     padding: 4px 6px;
     border-radius: 3px;
-
-    color: red;
+    background: #fafafa;
+    color: #aaa;
 }
 
 .form__error {
@@ -52,18 +55,22 @@
     text-align: left;
 }
 
+.form__group-content-radio {
+    margin-right: 510px;
+}
+
 .form__input--text input,
 .form__input--textarea textarea {
     padding: 10px;
     width: 600px;
     border: 1px solid #ddd;
     border-radius: 3px;
-
     appearance: none;
 }
 
 .form__input--text input {
     height: 40px;
+
 }
 
 .form__input--textarea textarea {
@@ -72,6 +79,7 @@
 
 .form__button {
     margin-top: 30px;
+
 }
 
 .form__button-submit {

@@ -6,8 +6,13 @@
 
 @section('content')
     <div class="thanks__content">
-        <div class="thanks__heading">
-            <h2>お問い合わせありがとうございます</h2>
-        </div>
+        <form class="form" action="/">
+            <div class="thanks__heading">
+                <h2>ご意見いただきありがとうございました。</h2>
+            </div>
+            <div class="return__button">
+                <button class="return__button-submit" type="submit">トップページへ</button>
+            </div>
+        </form>
     </div>
 @endsection

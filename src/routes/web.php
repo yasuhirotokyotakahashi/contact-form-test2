@@ -22,3 +22,5 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
 Route::get('/admin', [ContactController::class, 'find']);
+Route::delete('/admin/{contact_id}', [ContactController::class, 'destroy']);
+Route::get('/admin/search', [ContactController::class, 'search']);
